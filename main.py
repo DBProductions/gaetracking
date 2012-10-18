@@ -14,6 +14,5 @@ class MainHandler(webapp2.RequestHandler):
             t = Trackentry(url = url, site = site)
             t.put()
         self.response.headers["Content-Type"] = "image/gif"
-        #self.response.write()
 
 app = webapp2.WSGIApplication([('/', MainHandler)])
