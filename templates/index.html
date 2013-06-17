@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Main</title>
+    <meta charset="utf-8">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">	      
+        <h1>{{head}}</h1>
+        <table class="table table-condensed">
+            <tr>
+                <th>URL</th>
+                <th>Site</th>
+                <th>Requested</th>
+                <th>Step</th>
+            </tr>	
+            {% for item in list %}
+                <tr>
+                    <td>{{ item.url }}</td>
+                    <td>{{ item.site }}</td>
+                    <td>{{ item.requested }}</td>
+                    <td>{{ item.step }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+	</div>  
+  </body>
+</html>
