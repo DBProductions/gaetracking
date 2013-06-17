@@ -9,7 +9,7 @@ Extend the model and add more properties if more tracking data is needed.
     class Trackentry(db.Model):
         url = db.StringProperty(required=True)
         site = db.StringProperty(required=True)
-        step = db.StringProperty(required=True)
+        step = db.StringProperty(required=False)
         requested = db.DateTimeProperty(auto_now_add=True)
 
 To see the tracking data use the Admin Interface or /show for a simple view.
