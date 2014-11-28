@@ -13,7 +13,7 @@ handlers:
   static_dir: css 
 
 - url: /show
-  script: main.app
+  script: show.app
   login: admin
 
 - url: .*
